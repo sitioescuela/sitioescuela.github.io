@@ -1,0 +1,61 @@
+<?php
+session_start();
+if ( $_SESSION['usuario'] !== '') {
+    die("Contraseña incorrecta");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Escuela Nº 1234 "Dr. Julio Maiztegui"</title>
+        <link rel="stylesheet" href="static/estilo.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <img src="static/logo.png" alt="Logo sitio" width="100"> 
+<h1>Escuela Nº 1234 "Dr. Julio Maiztegui"</h1>
+<h2>Elegí la mochila de tu grado/curso</h2>
+
+            </div>
+            <div class="lista_principal">
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(1);">
+                    <p class="nombre_curso">Primer grado "A" TT</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(2);">
+                    <p class="nombre_curso">Segundo grado "A" TT</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(3);">
+                    <p class="nombre_curso">Tercer grado "A" TT</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(4);">
+                    <p class="nombre_curso">Cuarto grado "A" TT</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(5);">
+                    <p class="nombre_curso">Quinto grado "A" TT</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(6);">
+                    <p class="nombre_curso">Sexto grado "A" TT</p>
+                </div>
+            
+            <div class="materia" style="background-image: url('static/logo.png'" onclick="verCurso(7);">
+                    <p class="nombre_curso">Séptimo grado "A" TT</p>
+                </div>
+            
+            </div>
+
+            <div class="actividad" id="descargar">
+                <p>Última actualización: 21/05/2020 - 00:28hs</p>
+                <script src="static/scripts.js"></script>
+            </div>
+        </div>
+    </body>
+</html>

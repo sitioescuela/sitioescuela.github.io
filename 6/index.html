@@ -1,0 +1,258 @@
+<?php
+session_start();
+if ( $_SESSION['usuario'] !== '') {
+    die("Contraseña incorrecta");
+}
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Escuela Nº 1234 "Dr. Julio Maiztegui"</title>
+        <link rel="stylesheet" href="../static/estilo.css">
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="encabezado">
+                <img src="../static/logo.png" alt="Logo sitio" width="100"> 
+<h1>Escuela Nº 1234 "Dr. Julio Maiztegui"</h1>
+<h1>Sexto grado "A" TT</h1>
+
+            </div>
+            <div class="lista_principal">
+            
+            <div class="materia" style="background-image: url('../static/logos/cuaderno.png')" onclick="verTrabajos(37);">
+                    <p class="nombre_materia">Comunicaciones</p>
+                    <br> <p class="nombre_docente">Nombre directivo/a<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos37" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(37)">&times;</span>
+                    <br>
+
+                    <h1>Comunicaciones</h1>
+                    <h2>Nombre directivo/a</h2>
+                    <h2>direccion@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(37)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/pizarra.png')" onclick="verTrabajos(38);">
+                    <p class="nombre_materia">Lengua y Cs. Sociales</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos38" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(38)">&times;</span>
+                    <br>
+
+                    <h1>Lengua y Cs. Sociales</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(38)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/matematica.png')" onclick="verTrabajos(39);">
+                    <p class="nombre_materia">Matemática y Cs Naturales</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos39" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(39)">&times;</span>
+                    <br>
+
+                    <h1>Matemática y Cs Naturales</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(39)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/argentina.png')" onclick="verTrabajos(40);">
+                    <p class="nombre_materia">Form. Ética y Ciud</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos40" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(40)">&times;</span>
+                    <br>
+
+                    <h1>Form. Ética y Ciud</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(40)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/ed_fisica.png')" onclick="verTrabajos(42);">
+                    <p class="nombre_materia">Educación Física</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos42" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(42)">&times;</span>
+                    <br>
+
+                    <h1>Educación Física</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(42)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/tecnologias.png')" onclick="verTrabajos(43);">
+                    <p class="nombre_materia">Tecnología</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos43" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(43)">&times;</span>
+                    <br>
+
+                    <h1>Tecnología</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(43)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/plastica.png')" onclick="verTrabajos(44);">
+                    <p class="nombre_materia">Plástica</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos44" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(44)">&times;</span>
+                    <br>
+
+                    <h1>Plástica</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(44)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/musica.png')" onclick="verTrabajos(45);">
+                    <p class="nombre_materia">Ed. Musical</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos45" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(45)">&times;</span>
+                    <br>
+
+                    <h1>Ed. Musical</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(45)">
+                    Volver
+                </a>
+            </div>
+            
+            <div class="materia" style="background-image: url('../static/logos/ingles.png')" onclick="verTrabajos(46);">
+                    <p class="nombre_materia">Inglés</p>
+                    <br> <p class="nombre_docente">Nombre docente<br>
+                    
+                        Sin contenido aún
+                    
+                    </p>
+                </div>
+                <div id="trabajos46" class="trabajos_inactivo">
+                    <span class="cerrar" onclick="cerrarTrabajos(46)">&times;</span>
+                    <br>
+
+                    <h1>Inglés</h1>
+                    <h2>Nombre docente</h2>
+                    <h2>docente@mail.com</h2>
+                    
+                        <div class="actividad">                            
+                        <p>No hay material todavía</p>
+                        </div>
+                    
+                <a href="#" class="boton" onclick="cerrarTrabajos(46)">
+                    Volver
+                </a>
+            </div>
+            
+            </div>
+
+            <div class="actividad" id="descargar">
+                <p>Última actualización: 21/05/2020 - 00:28hs</p>
+                <script src="../static/scripts.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
